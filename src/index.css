@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@theme {
+  --primary-black: #121212;
+  --primary-green: #1ed760;
+  --secondary-green: #1db954;
+  --white: #ffffff;
+}
+
+.container {
+  @apply mx-4 md:mx-8 lg:mx-12;
+}

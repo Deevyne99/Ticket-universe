@@ -76,7 +76,6 @@ const Hero = () => {
             Create an account
           </li>
         </article>
-
         {/* Grids */}
         <div className='w-1/2 grid grid-cols-3 gap-4'>
           {/* Grid 1 */}

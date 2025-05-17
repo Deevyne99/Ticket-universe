@@ -1,9 +1,12 @@
+import { TbUniverse } from 'react-icons/tb'
 const Navbar = () => {
   return (
     <nav className=' flex flex-col  bg-(--primary-black) py-4 '>
       <div className='flex w-full items-center justify-between container'>
         <div className='flex '>
-          <h1 className='text-(--primary-green) font-bold text-4xl'>TU</h1>
+          <div>
+            <TbUniverse className='text-6xl text-(--primary-green)' />
+          </div>
         </div>
         <div className='flex gap-4'>
           <ul className='flex gap-4 ml-auto '>

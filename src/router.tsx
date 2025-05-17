@@ -19,13 +19,14 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: '/events', element: <Events /> },
-      { path: '/register', element: <Register /> },
-      { path: '/login', element: <Login /> },
+
       { path: '/events/:id', element: <SingleEvent /> },
       { path: '/favourite-events', element: <FavouriteEvents /> },
     ],
   },
   { path: '/user/:id', element: <Profile /> },
+  { path: '/login', element: <Login /> },
+  { path: '/register', element: <Register /> },
   { path: '*', element: <NotFound /> },
 ])
 export default router

@@ -1,8 +1,12 @@
-import image from '../../../assets/event-1.jpg'
+import image from '../../assets/event-1.jpg'
 import { IoLocationSharp } from 'react-icons/io5'
+import { Link } from 'react-router'
 const EventCard = () => {
   return (
-    <div className='p-4 bg-(--white) w-[300px] shadow-lg rounded-md flex flex-col'>
+    <Link
+      to={'/events/:id'}
+      className='p-4  bg-(--white) w-[300px] shadow-lg hover:shadow-2xl rounded-md flex flex-col cursor-pointer'
+    >
       <div className='w-full h-[200px] '>
         <img src={image} alt='' className='rounded-md' />
       </div>
@@ -38,7 +42,7 @@ const EventCard = () => {
           </p> */}
         </div>
       </article>
-    </div>
+    </Link>
   )
 }
 export default EventCard

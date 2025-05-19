@@ -1,5 +1,5 @@
 import ButtonComponent from '../../components/ReusableComponents/ButtonComponent'
-import InputComponent from '../../components/ReusableComponents/navbar/InputComponent'
+import InputComponent from '../../components/ReusableComponents/InputComponent'
 import { TbUniverse } from 'react-icons/tb'
 const Register = () => {
   return (

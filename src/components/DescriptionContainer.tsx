@@ -25,9 +25,9 @@ const DescriptionContainer = () => {
   }
 
   return (
-    <div className='flex flex-col w-full oveflow-hidden '>
-      <div className=''>
-        <div className=''>
+    <div className='container h-[400px] flex flex-col w-full oveflow-hidden my-20'>
+      <div className='flex justify-center  gap-6 w-full h-full'>
+        <div className=' flex flex-col justify-between'>
           {description
             .map((item, index) => {
               return (
@@ -36,50 +36,52 @@ const DescriptionContainer = () => {
                   key={item.id}
                   className={`${
                     productIndex === index ? 'bg-[#60a5fa]' : 'bg-gray-100'
-                  }  md:w-[5px] md:h-[10px] w-[40px] h-[5px] md:mt-0 mt-4 `}
+                  }  md:w-[5px] md:h-[100px] w-[40px] h-[5px] md:mt-0 mt-4 cursor-pointer`}
                 ></div>
               )
             })
-            .slice(0, 3)}
+            .slice(0, 4)}
         </div>
-        {description
-          .map((item) => {
-            const { id, image, title } = item
+        <div className='flex flex-col justify-between items-center'>
+          {description
+            .map((item) => {
+              const { id, title } = item
 
-            return (
-              <div
-                className={`  w-full flex  md:flex-row items-center pr-8 md:pr-24 justify-center md:justify-between md:gap-12 gap-4 transition-transform duration-300 mx-auto `}
-                key={id}
-              >
-                <div className='flex '>
-                  <article
-                    className={`w-full md:w-[50%] flex max-w-[600px] flex-col transition-transform duration-400  `}
-                  >
-                    <div>
-                      <h2 className='text-2xl md:text-left text-center text-[#94a3b8] max-w-[500px] font-bold'>
-                        {title}
-                      </h2>
-                      <p className='text-[#94a3b8] w-full  p-2 tracking-wide leading-loose text-center md:text-left'>
-                        {item.title}
-                      </p>
-                    </div>
-                  </article>
-                  <div className='w-full  md:w-[50%] md:flex-row flex-col flex md:gap-4 gap-0 justify-center items-center'>
-                    <div
-                      className={`justify-center items-center flex transition-transform duration-400 order-1 md:order-2 w-full $ `}
+              return (
+                <div
+                  className={`  w-full flex  items-center pr-8 md:pr-24 justify-center md:justify-between md:gap-12 gap-4 transition-transform duration-300 mx-auto bg-red-400`}
+                  key={id}
+                >
+                  <div className='flex  bg-yellow-200 w-full'>
+                    <article
+                      className={`w-full  flex  max-w-[600px] flex-col transition-transform duration-400  `}
                     >
-                      <img
-                        src={image[productIndex]}
-                        alt=''
-                        className='w-full  '
-                      />
-                    </div>
+                      <div>
+                        <h2 className='text-2xl md:text-left text-center text-[#94a3b8] max-w-[500px] font-bold'>
+                          {title}
+                        </h2>
+                        <p className='text-[#94a3b8] w-full  p-2 tracking-wide leading-loose text-center md:text-left'>
+                          {item.title}
+                        </p>
+                      </div>
+                    </article>
                   </div>
                 </div>
-              </div>
-            )
-          })
-          .slice(0, 3)}
+              )
+            })
+            .slice(0, 4)}
+        </div>
+        <div className='w-full  md:w-[50%] md:flex-row flex-col flex md:gap-4 gap-0 justify-center items-center'>
+          <div
+            className={`justify-center items-center flex transition-transform duration-400 order-1 md:order-2 w-full $ `}
+          >
+            <img
+              src={description[productIndex].image}
+              alt=''
+              className='w-full  '
+            />
+          </div>
+        </div>
       </div>
     </div>
   )

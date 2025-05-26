@@ -25,8 +25,8 @@ const DescriptionContainer = () => {
   }
 
   return (
-    <div className='container h-[400px] flex flex-col w-full oveflow-hidden my-20'>
-      <div className='flex justify-center  gap-6 w-full h-full'>
+    <div className='h-[450px] flex flex-col container w-full oveflow-hidden my-20'>
+      <div className='flex justify-center  gap-6 w-full h-full '>
         <div className=' flex flex-col justify-between'>
           {description
             .map((item, index) => {
@@ -35,33 +35,37 @@ const DescriptionContainer = () => {
                   onClick={() => handleSLider(index)}
                   key={item.id}
                   className={`${
-                    productIndex === index ? 'bg-[#60a5fa]' : 'bg-gray-100'
+                    productIndex === index
+                      ? 'bg-(--primary-green)'
+                      : 'bg-gray-100'
                   }  md:w-[5px] md:h-[100px] w-[40px] h-[5px] md:mt-0 mt-4 cursor-pointer`}
                 ></div>
               )
             })
             .slice(0, 4)}
         </div>
-        <div className='flex flex-col justify-between items-center'>
+        <div className='flex flex-col justify-between gap-4  items-center'>
           {description
             .map((item) => {
               const { id, title } = item
 
               return (
                 <div
-                  className={`  w-full flex  items-center pr-8 md:pr-24 justify-center md:justify-between md:gap-12 gap-4 transition-transform duration-300 mx-auto bg-red-400`}
+                  className={` w-full md:w-[1/2]  flex  items-center pr-8 md:pr-24 justify-center md:justify-between md:gap-12 gap-4 transition-transform duration-300 mx-auto `}
                   key={id}
                 >
-                  <div className='flex  bg-yellow-200 w-full'>
+                  <div className='flex bg-amber-950  bg- w-full'>
                     <article
-                      className={`w-full  flex  max-w-[600px] flex-col transition-transform duration-400  `}
+                      className={`flex w-[420px] flex-col transition-transform duration-400  bg-[#fafafa] p-2 `}
                     >
                       <div>
                         <h2 className='text-2xl md:text-left text-center text-[#94a3b8] max-w-[500px] font-bold'>
                           {title}
                         </h2>
-                        <p className='text-[#94a3b8] w-full  p-2 tracking-wide leading-loose text-center md:text-left'>
-                          {item.title}
+                        <p className='text-[#94a3b8] w-full  p-2 tracking-wide leading-loose text-center md:text-left text-sm'>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Cumque ducimus dolores dignissimos, doloremque
+                          voluptatibus voluptatem.
                         </p>
                       </div>
                     </article>
@@ -71,14 +75,14 @@ const DescriptionContainer = () => {
             })
             .slice(0, 4)}
         </div>
-        <div className='w-full  md:w-[50%] md:flex-row flex-col flex md:gap-4 gap-0 justify-center items-center'>
+        <div className='w-full h-full md:w-[50%] md:flex-row flex-col flex md:gap-4 gap-0 justify-center items-center'>
           <div
-            className={`justify-center items-center flex transition-transform duration-400 order-1 md:order-2 w-full $ `}
+            className={`justify-center items-center h-full flex transition-transform duration-400 order-1 md:order-2 w-full $ `}
           >
             <img
               src={description[productIndex].image}
               alt=''
-              className='w-full  '
+              className='w-full  object-cover h-full rounded-lg shadow-lg'
             />
           </div>
         </div>

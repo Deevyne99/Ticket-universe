@@ -268,6 +268,7 @@ export const description = [
       'Explore the latest innovations in tech, AI, and robotics with live demos and expert talks.',
     location: 'Lagos, Nigeria',
     tickets: 120,
+
     pricing: 'Free',
     time: '10:00 AM – 1:00 PM WAT',
     date: '5th October 2025',
@@ -288,6 +289,19 @@ export const description = [
   },
   {
     id: 3,
+    image: '/assets/event-3.jpg',
+    title: 'Startup Ignition',
+    name: 'Startup Ignition',
+    description:
+      'Pitch your idea, meet investors, and learn from startup founders in this high-energy event.',
+    location: 'Abuja, Nigeria',
+    tickets: 200,
+    pricing: 'Free',
+    time: '4:00 PM – 7:00 PM WAT',
+    date: '12th October 2025',
+  },
+  {
+    id: 4,
     image: '/assets/event-3.jpg',
     title: 'Startup Ignition',
     name: 'Startup Ignition',

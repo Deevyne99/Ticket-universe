@@ -25,9 +25,9 @@ const DescriptionContainer = () => {
   }
 
   return (
-    <div className='h-[450px] flex flex-col container w-full oveflow-hidden my-20'>
+    <div className='h-[600px] flex flex-col container w-full oveflow-hidden my-20'>
       <div className='flex justify-center  gap-6 w-full h-full '>
-        <div className=' flex flex-col justify-between'>
+        <div className=' flex flex-col bg-gray-100 justify-between'>
           {description
             .map((item, index) => {
               return (
@@ -35,14 +35,12 @@ const DescriptionContainer = () => {
                   onClick={() => handleSLider(index)}
                   key={item.id}
                   className={`${
-                    productIndex === index
-                      ? 'bg-(--primary-green)'
-                      : 'bg-gray-100'
+                    productIndex === index ? 'bg-(--primary-green)' : ''
                   }  md:w-[5px] md:h-[100px] w-[40px] h-[5px] md:mt-0 mt-4 cursor-pointer`}
                 ></div>
               )
             })
-            .slice(0, 4)}
+            .slice(0, 5)}
         </div>
         <div className='flex flex-col justify-between gap-4  items-center'>
           {description
@@ -56,10 +54,10 @@ const DescriptionContainer = () => {
                 >
                   <div className='flex bg-amber-950  bg- w-full'>
                     <article
-                      className={`flex w-[420px] flex-col transition-transform duration-400  bg-[#fafafa] p-2 `}
+                      className={`flex w-[470px] flex-col transition-transform duration-400  bg-[#fafafa] p-2 `}
                     >
                       <div>
-                        <h2 className='text-2xl md:text-left text-center text-[#94a3b8] max-w-[500px] font-bold'>
+                        <h2 className='text-2xl md:text-left text-center text-[#94a3b8] max-w-[550px] font-bold'>
                           {title}
                         </h2>
                         <p className='text-[#94a3b8] w-full  p-2 tracking-wide leading-loose text-center md:text-left text-sm'>

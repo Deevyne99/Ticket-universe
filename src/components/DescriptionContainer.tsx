@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { description } from '../../data'
 const DescriptionContainer = () => {
   const [productIndex, setProductIndex] = useState(0)
@@ -23,6 +23,14 @@ const DescriptionContainer = () => {
   const handleSLider = (index: number) => {
     setProductIndex(index)
   }
+
+  useEffect(() => {
+    const lastIndex = description.length - 1
+    const slider = setInterval(() => {
+      setProductIndex((prev) => (prev === lastIndex ? 0 : prev + 1))
+    }, 5000)
+    return () => clearInterval(slider)
+  }, [])
 
   return (
     <div className='h-[600px] flex flex-col container w-full oveflow-hidden my-20'>

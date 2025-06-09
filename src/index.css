@@ -11,6 +11,14 @@
   --gray-background: #fafafa;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 .container {
   @apply mx-4 md:mx-8 lg:mx-12;
 }

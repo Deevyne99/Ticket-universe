@@ -33,7 +33,7 @@ const EventCard = ({
   return (
     <Link
       to={'/events/:id'}
-      className='p-4  bg-(--white) w-[300px] shadow-lg hover:shadow-2xl rounded-md flex flex-col cursor-pointer'
+      className='p-4  bg-(--white) w-[300px] shadow-lg hover:shadow-2xl rounded-md flex flex-col cursor-pointer max-w-[280px]'
     >
       <div className='w-full h-[200px] '>
         <img src={image} alt='' className='rounded-md' />

@@ -3,22 +3,6 @@ import { description } from '../../data'
 const DescriptionContainer = () => {
   const [productIndex, setProductIndex] = useState(0)
 
-  // useEffect(() => {
-  //   const lastIndex = description.length - 1
-  //   if (productIndex < 0) {
-  //     setProductIndex(lastIndex)
-  //   }
-  //   if (productIndex > lastIndex) {
-  //     setProductIndex(0)
-  //   }
-  // }, [productIndex])
-
-  // useEffect(() => {
-  //   const slider = setInterval(() => {
-  //     setProductIndex(productIndex + 1)
-  //   }, 3000)
-  //   return () => clearInterval(slider)
-  // }, [productIndex])
 
   const handleSLider = (index: number) => {
     setProductIndex(index)
@@ -83,7 +67,7 @@ const DescriptionContainer = () => {
         </div>
         <div className='w-full h-full md:w-[50%] md:flex-row flex-col flex md:gap-4 gap-0 justify-center items-center'>
           <div
-            className={`justify-center items-center h-full flex transition-transform duration-400 order-1 md:order-2 w-full $ `}
+            className={`justify-center items-center h-full flex transition-transform duration-400 order-1 md:order-2 w-full`}
           >
             <img
               src={description[productIndex].image}

@@ -314,3 +314,58 @@ export const description = [
     date: '12th October 2025',
   },
 ]
+
+
+export const categories=[
+  {
+    name: "Music & Concerts",
+    description: "Live performances by bands, solo artists, and DJs across genres like pop, rock, jazz, and EDM.",
+    image: '/assets/event-2.jpg'
+  },
+  {
+    name: "Sports & Fitness",
+    description: "Professional games, local tournaments, marathons, and fitness events including yoga and CrossFit.",
+    image: '/assets/event-3.jpg'
+  },
+  {
+    name: "Theatre & Performing Arts",
+    description: "Dramas, musicals, comedy acts, and cultural performances on stage or in theaters.",
+    image: '/assets/event-4.jpg'
+  },
+  {
+    name: "Festivals & Fairs",
+    description: "Cultural, food, film, and seasonal festivals offering entertainment, food, and community experiences.",
+    image: '/assets/event-6.jpg'
+  },
+  {
+    name: "Business & Networking",
+    description: "Conferences, seminars, and meetups for professionals, startups, and entrepreneurs.",
+    image: '/assets/event-8.jpg'
+  },
+  {
+    name: "Education & Workshops",
+    description: "Hands-on classes, lectures, and skill-building events across various topics and industries.",
+    image: '/assets/event-7.jpg'
+  },
+  {
+    name: "Nightlife & Parties",
+    description: "Club events, themed parties, raves, and social gatherings typically held in the evening or late night.",
+    image: '/assets/event-5.jpg'
+  },
+  {
+    name: "Family & Kids",
+    description: "Events tailored for families, including kids' shows, puppet theaters, school events, and fairs.",
+    image: '/assets/event-9.jpg'
+
+  },
+  {
+    name: "Online & Virtual Events",
+    description: "Webinars, virtual conferences, livestreamed shows, and remote workshops accessible from anywhere.",
+    image: '/assets/event-10.jpg'
+  },
+  {
+    name: "Charity & Causes",
+    description: "Fundraisers, awareness walks, donation drives, and benefit concerts supporting social or environmental causes.",
+    image: '/assets/event-8.jpg'
+  }
+]

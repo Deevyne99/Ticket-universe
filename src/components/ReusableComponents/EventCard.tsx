@@ -42,26 +42,26 @@ const EventCard = ({
         <div className='flex justify-between items-center gap-1'>
           <div className='bg-(--light-green) p-1 gap-1 items-center flex   rounded-md'>
             <div className='bg-(--white) rounded-xl px-2'>
-              <p className='text-(--primary-green)'>{pricing}</p>
+              <p className='text-(--primary-green) text-sm'>{pricing}</p>
             </div>
             <div>
-              <p className='text-(--primary-green)'>{tickets} </p>
+              <p className='text-(--primary-green) text-sm'>{tickets} </p>
             </div>
           </div>
           <div>
-            <p className='text-(--primary-green)'>${price ? price : 0}</p>
+            <p className='text-(--primary-green) text-sm'>${price ? price : 0}</p>
           </div>
         </div>
-        <p>{title}</p>
+        <p className='text-gray-500 text-sm font-bold'>{title}</p>
         <div>
-          <p className='text-sm'>{description}</p>
+          <p className='text-sm text-gray-500'>{description}</p>
         </div>
         <div className='flex items-center gap-1'>
           <IoLocationSharp className='text-(--primary-green)' />
-          <p className='text-sm'>{location}</p>
+          <p className='text-sm text-gray-500'>{location}</p>
         </div>
         <div className='flex flex-col'>
-          <p>{date}</p>
+          <p className='text-sm text-gray-500'>{date}</p>
           {/* <p>
             4:00PM - 5:00PM <span>WAT</span>
           </p> */}

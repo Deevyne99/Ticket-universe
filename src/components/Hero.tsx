@@ -49,8 +49,8 @@ const Hero = () => {
             {/* Column 1 - Bottom to Top */}
             <div className="relative h-[600px] overflow-hidden">
               <div className="absolute flex flex-col gap-4 scroll-up">
-                {doubledImages.map((item) => (
-                  <div key={`col1-${item.id}`} className="h-[190px]">
+                {doubledImages.map((item,index) => (
+                  <div key={index} className="h-[190px]">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -64,8 +64,8 @@ const Hero = () => {
             {/* Column 2 - Top to Bottom */}
             <div className="relative h-[600px] overflow-hidden">
               <div className="absolute flex flex-col gap-4 scroll-down">
-                {doubledImages.map((item) => (
-                  <div key={`col2-${item.id}`} className="h-[190px]">
+                {doubledImages.map((item,index) => (
+                  <div key={index} className="h-[190px]">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -79,8 +79,8 @@ const Hero = () => {
             {/* Column 3 - Bottom to Top */}
             <div className="relative h-[600px] overflow-hidden">
               <div className="absolute flex flex-col gap-4 scroll-up">
-                {doubledImages.map((item) => (
-                  <div key={`col3-${item.id}`} className="h-[190px]">
+                {doubledImages.map((item,index) => (
+                  <div key={index} className="h-[190px]">
                     <img
                       src={item.image}
                       alt={item.title}

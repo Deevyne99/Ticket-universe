@@ -6,7 +6,7 @@ import EventCategoriesCard from './EventCategories'
 
 export const CategoryContainer = () => {
   const scrollRef = useRef<HTMLDivElement>(null)
-  const scrollAmount = 250 // Adjust this value to match your item width
+  const scrollAmount = 300 // Adjust this value to match your item width
 
   const handleNext = () => {
     if (scrollRef.current) {

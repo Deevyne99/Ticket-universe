@@ -369,3 +369,28 @@ export const categories=[
     image: '/assets/event-8.jpg'
   }
 ]
+
+
+
+export const display = [
+  {
+    id: 1,
+    name: 'The Ultimate Guide to Event Planning',
+    description:
+      "Discover key strategies and tools to plan a successful event, whether it's a wedding, conference, or birthday bash.",
+    image: '/assets/event-1.jpg',
+  },
+  {
+    id: 2,
+    name: 'How to Maximize Engagement at Your Events',
+    description:
+      'Learn how to boost audience participation and create memorable experiences that keep people coming back.',
+    image: '/assets/event-12.jpg',
+  },
+  {
+    id: 3,
+    name: 'Top 10 Event Themes That Never Fail',
+    description:
+      'Stuck on ideas? These crowd-pleasing event themes are sure to inspire your next big gathering.',
+    image: '/assets/event-3.jpg',
+  }]

@@ -13,7 +13,7 @@ const DisplayCard = ({name,description,img,events,active,handleChange}:{name:str
   const articleRef = useRef<HTMLElement>(null);
 
   return (
-    <div className='flex flex-col h-[650px] md:h-[500px]  '>
+    <div className='flex flex-col h-[680px] md:h-[600px]  '>
         <div className="flex flex-col md:flex-row w-full justify-center items-center  h-full">
             <article ref={articleRef} className='w-full flex flex-col items-center order-2 md:order-1   md:w-1/2 md:px-12 px-4  h-full my-auto justify-center '>
             <h4>{name}</h4>

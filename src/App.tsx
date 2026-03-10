@@ -10,11 +10,11 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className=''>
+    <div className='-pt-72'>
       <Navbar />
 
       <Outlet />
-      <Footer/>
+      <Footer />
     </div>
   )
 }

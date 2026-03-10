@@ -1,12 +1,12 @@
 import { CategoryContainer } from '../components/CategoryContainer'
 // import DescriptionContainer from '../components/DescriptionContainer'
 import Hero from '../components/Hero'
- import EventCardContainer from '../components/ReusableComponents/EventCardContainer'
+import EventCardContainer from '../components/ReusableComponents/EventCardContainer'
 import DisplayContainer from '../components/DisplayContainer'
-import Newsletter from '../components/Newsletter'
+import Newsletter from '../components/NewsLetterSignUp'
 const Home = () => {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col '>
       <Hero />
       {/* <div className='flex flex-col'>
         <DescriptionContainer />
@@ -21,7 +21,7 @@ const Home = () => {
       <div className='py-12'>
         <DisplayContainer />
       </div>
-      <div className='py-12'>
+      <div className='flex flex-col'>
         <Newsletter />
       </div>
     </div>
